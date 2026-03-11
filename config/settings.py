@@ -106,4 +106,8 @@ SIMPLE_JWT = {
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
 }
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://web-production-01d3e.up.railway.app',
+]
+
 CORS_ALLOW_ALL_ORIGINS = True
