@@ -1,2 +1,2 @@
-web: gunicorn config.wsgi:application
-release: python manage.py migrate
+web: /app/.venv/bin/gunicorn config.wsgi:application --bind 0.0.0.0:$PORT
+release: /app/.venv/bin/python manage.py migrate
